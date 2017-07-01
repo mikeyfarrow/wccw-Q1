@@ -1,0 +1,59 @@
+/* Journal
+   This is the CSS stylesheet you will need to complete
+*/
+
+body {
+	margin: 0 10% 0 10%;
+	background-image: url(background.gif)
+}
+
+#main {
+	border: 10px solid white;
+	background-color: white;
+	overflow: auto;
+}
+
+#header {
+	background-color: #A8F0F0;
+	text-align: right;
+}
+
+#header > h2 {
+	font-size: 14pt;
+}
+
+.entry {
+	background-color: #E8FBFB;
+	padding: 5px;
+	margin-top: 10px;
+	border: 4px solid #C2E9E9;
+	overflow: auto;
+}
+
+.entry img {
+	float: right;
+}
+
+.date {
+	border-bottom: 2px dashed;
+}
+
+.friends {
+	background-color: #B7F2E8;
+	margin-top: 10px;
+	padding-left: 10px;
+	margin-right: 20px;
+	border: 5px solid blue;
+}
+
+#col1 {
+	width: 30%;
+}
+
+#col2 {
+	width: 70%;
+}
+
+.col {
+	float: left;
+}
