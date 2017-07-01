@@ -1,0 +1,23 @@
+1. Add a table to your document. For example, make a table that shows
+the weather forecast and the expected high and low temperature for
+the next 5 days.
+
+2. Make a list with lists inside of it. Follow the example below:
+    * Simpsons
+        * Bart
+        * Lisa
+        * Marge
+    * Seinfeld
+        * Jerry
+        * Elaine
+        * George
+
+3. Using CSS, change the font color of all headings in your document.
+(See your CSS handout for help). To accomplish this, you will need to
+make a new CSS file called style.css and save it in the same folder as
+your HTML file. To link your style.css file from your HTML, you will
+need to add the following line of code inside the head element of your
+HTML:
+    <link rel="stylesheet" href="style.css" />
+
+4. Customize your page's style! Use the CSS handout as a guide.

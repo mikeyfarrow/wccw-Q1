@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <link rel="stylesheet" type="text/css" href="./hw1-recipe-spec_files/style.css">
+    <link rel="stylesheet" type="text/css" href="./hw1-recipe-spec_files/print.css" media="print">
+    <title>Project 1 (Recipe)</title>
+</head>
+
+<body>
+    <h1>
+            Unloop Web Programming <br>
+            Programming Project 1: Recipe
+        </h1>
+    <div id="description">
+        <h2>Getting Started</h2>
+        <p>
+            Before you begin, you should read the specification thoroughly. Once you have finished reading the specification, create a new folder on your W: drive called "project1-recipe". The following starter files are provided:
+        </p>
+        <ul>
+            <li>
+                <a href="skeleton.txt"><code>skeleton.txt</code><a> contains
+                    all of the text of the page so that you don't have to type it
+                    yourself.
+                </li>
+                <li><a href="pie.jpg"><code>pie.jpg</code><a> is the image to use near the top of the page</li>
+            </ul>
+            
+
+            <h2>Assignment Description:</h2>
+
+
+            <p>
+                This assignment tests your understanding of basic HTML and CSS.  You will create several files related to a recipe web site for a fictional pie company named Granny's Pies.  Write the following files:
+            </p>
+
+            <ul>
+                <li><code>index.html</code>, the first of two web pages (with an optional CSS style sheet file)</li>
+                <li><code>pie.html</code>, the second of two web pages</li>
+                <li><code>recipe.css</code>, the style sheet for <code>pie.html</code></li>
+            </ul>
+
+            <h2>Custom <code>index.html</code> page</h2>
+            <p>
+                The first part of your task is to create a front page for this web site, stored in a file named <code>index.html</code>.  Your front page must meet the following requirements: 
+            </p>
+            <ul>
+                <li>It should contain a hyperlink to your <code>pie.html</code> page</li>
+                <li>The file must also be at least 20 lines long and must contain at least 4 different HTML elements in its body</li>
+                <li>It also may not significantly borrow content from your <code>pie.html</code></li>
+                <li>Contain a hyperlink to the HTML Validator. The url for the validator is: 
+                    <code>http://unloop.edu/validator/</code>
+                </li>
+            </ul>
+            
+            <p>Otherwise, this front page can have any appearance you like.  If you like, you may use an optional CSS stylesheet with this page named <code>index.css</code> and submit it with your other files.  Be creative!</p>
+            
+
+            <p>
+                The second (and more substantial) part of the assignment is to recreate a specific web page describing a recipe for lemon meringue pie, stored in a file named <code>pie.html</code>.  Unlike <code>index.html</code>, this page is rigidly specified and must exactly match the appearance specified in this document.
+            </p>
+        </div>
+
+        <div id="expectedappearance">
+            <h2>Expected Appearance:</h2>
+
+            <p>
+                You must match the appearance of <a href="expected_output.pdf" target="_blank">this web page</a>. Any line breaks are done automatically by the browser, except ones that are clearly much narrower than the page width, such as the line "One 9-inch pie".
+                </p>
+    </div>
+    <div id="behaviordetails">
+        <h2>Appearance and Behavior Details:</h2>
+        <p>
+            The pie web page's title text should be <strong>Grandma's Lemon Meringue Pie</strong>.
+        </p>
+        <p>
+            The picture of the pie on the page uses the image <code>pie.jpg</code>. The image file should be saved to the same folder as your HTML and CSS files, and you should use a relative path to this image.
+        </p>
+        <h3>Headings</h3>
+        <ul>
+            <li>All headings on the page should use a text color of (red=164, green=164, blue=0) or <code>#A4A400</code></li>
+            <li>All headings on the page should use a background color of (red=240, green=240, blue=240) or <code>#F0F0F0</code></li>
+            <li>The font families for headings are Century Gothic, Futura, Verdana, or any sans-serif font available on the system.</li>
+            <li>The page's <em>main heading</em> is aligned to the center of the page body (using the CSS <a href="http://w3schools.pro.edu/cssref/pr_text_text-align.html" target="_blank">text-align</a> property)</li>
+            <li>The page's <em>main heading</em> uses a 22pt <strong>bold</strong> font</li>
+            <li>Other headings on the page are left-aligned and appear in an 18pt normal font.</li>
+            <li>All headings should be underlined (using the CSS <a href="http://w3schools.pro.edu/cssref/pr_text_text-decoration.html" target="_blank">text-decoration</a> property)</li>
+        </ul>
+        <h3>General Text Formatting</h3>
+        <ul>
+            <li>The overall page's body should have a white background</li>
+            <li>Text in the body should have a foreground color of (red=64, green=64, blue=64) or <code>#404040</code></li>
+            <li>Text in the body should use an 11pt font size</li>
+            <li>The font families for page text are Georgia, Garamond, or any serif font available on the system</li>
+            <li>Any hyperlinks on the page should use the color (red=164, green=164, blue=0) or <code>#A4A400</code>, matching the color of the page headings</li>
+        </ul>
+        <h3>Ingredients List</h3>
+        <ul>
+            <li>In the Ingredients list, the underlined words "tbsp" and "tsp" are <strong>abbreviations</strong> for "tablespoons" and "teaspoon" respectively. When the user hovers the mouse over these abbreviations, the full word should appear as a tooltip.</li>
+            <li>At the end of the Directions, the <strong>deleted word</strong> "cake" with a strike-out line through it is replaced by the word "pie" (see the HTML tags <a href="http://w3schools.pro.edu/tags/tag_del.html" target="_blank"><code>del</code></a> and <a href="http://w3schools.pro.edu/tags/tag_ins.html" target="_blank"><code>ins</code></a>)</li>
+            <li>After the Links section there is a short <a href="http://w3schools.pro.edu/charsets/ref_html_symbols.html" target="_blank"><strong>copyright notice</strong></a> that appears as a section of <a href="http://w3schools.pro.edu/tags/tag_pre.html" target="_blank"><strong>pre-formatted text</strong></a> in a monospace font. The text is spaced such that the second line is indented by 2 spaces and the third line by 4 spaces.</li>
+        </ul>
+        <h3>Directions List</h3>
+        <ul>
+            <li>The names of the four major steps of the recipe directions (such as "Preheat Oven") are <a href="http://w3schools.pro.edu/tags/tag_strong.html" target="_blank">strongly emphasized</a></li>
+            <li>The long quotations from the users appear in an italic font with background color (red=255, green=255, blue=200) or <code>#FFFFC8</code> (see the HTML tag <a href="http://w3schools.pro.edu/tags/tag_blockquote.html" target="_blank"><code>blockquote</code></a>)</li>
+        </ul>
+        <h3>Links</h3>
+        <p>
+            The bottom of the page has two hyperlinks. The "Home" link should link to your <code>index.html</code> page. Use a relative URL and assume it is located on the same web site as <code>pie.html</code> in the same directory. The "Search for other lemon meringue pie recipes" text should link to the following web page:
+        </p>
+        <ul>
+            <li><span class="url">http://www.google.com/</span></li>
+        </ul>
+    </div>
+    <!--        <div id="forcsemajors">
+            <h2>Extra Features:</h2>
+
+            <p>
+                In addition to the previous required features, you must also <strong>complete at least two of the following additional requirements</strong> in your pie page.  These are features that may have not been covered in detail in lecture; the idea is that you will have to explore your resources such as your textbook, lecture slides, or references to learn how to complete these features.  If you want to complete more than two of the extra features below, that is fine, but only two are required.
+            </p>
+
+            <ol>
+                <li>
+                    <strong>Background</strong>: Set the overall page to use a <a href="http://w3schools.pro.edu/cssref/pr_background-image.html" target="_blank">background image</a> of <a href="silverware.jpg"><code>silverware.jpg</code></a> (use relative paths to link to all images). The image should repeat in both directions across the page and <em>should not move when the page is scrolled.</em>
+         </li>
+         <li>
+            <strong>Favicon</strong>: Set the page to have a "favorites icon" ("favicon")
+            of icon.gif (use relative paths to link to all images).
+         </li>
+         <li>
+            <strong>Pie bullet</strong>: Set all bulleted lists of items on the page
+            to use an image for their bullet icon rather than the normal black circle.
+            Use the image of <a href="pie_icon.gif"><code>pie_icon.gif</code></a>
+            (use relative paths to link to all images).
+         </li>
+         <li>
+            <strong>Wide headings</strong>: Widen all headings on the page by placing
+            0.2em of horizontal spacing between neighboring letters in all headings.
+         </li>
+         </ol>
+
+         <p>
+            Near the top of your HTML file, put a comment saying which extra features you have
+            completed.
+         </p>
+
+         <p>
+            As much as possible, you should implement these changes by modifying your CSS code
+            rather than your HTML. Some of the CSS properties necessary will not
+            have been covered in class, so you must learn them yourself. Try using
+            the textbook or other reference.
+         </p>
+   </div> -->
+    <div id="implementationandgrading">
+        <h2>Implementation and Grading:</h2>
+        <ul>
+            <li>Implement your <code>pie.html</code> web page using valid HTML as taught in class. For full credit, your page must successfully pass the <a href="http://unloop.edu/validator/" target="_blank">HTML validator</a> with no errors (a <span style="color: green">green</span> bar).</li>
+            <li>You should choose appropriate HTML tags to match the structure of the content being displayed on the page.</li>
+            <li>Do not express stylistic information in the HTML page itself, such as inline styles or presentational HTML tags such as <code>b</code> or <code>font</code></li>
+            <li><strong>Avoid using unnecessary HTML elements.</strong></li>
+            <li>You may be tempted to use <code>class</code> and <code>id</code> attributes to target HTML elements for styling. Do not overuse such attributes in your HTML unnecessarily. If there is already a suitable tag for representing a given piece of content, favor the use of that tag rather than a less appropriate tag with a <code>class</code> or <code>id</code> attached for styling purposes</li>
+            <li> Format your HTML and CSS nicely so that it is as readable as possible, similarly to the examples shown in class.</li>
+            <li>Place a comment header in each file containing your name and a brief description of the assignment and the file's contents.
+            </li>
+            <li>You must properly use whitespace and indent your HTML and CSS code following examples shown in class.</li>
+        </ul>
+        <p>
+            The majority of the points for this assignment will be for the <code>pie.html</code> and its <code>recipe.css</code> files. The <code>index.html</code> will also be graded, but it will be worth fewer points. The main stylistic constraint on your <code>index.html</code> file is that it should pass the HTML validator. Beyond that it can contain any non-obscene content you like, even content that uses material we have not yet learned in class. Please do not link to external resources (other than image files or <code>index.css</code>) from your <code>index.html</code> page.
+        </p>
+    </div>
+</body>
+
+</html>

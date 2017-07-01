@@ -1,0 +1,158 @@
+/*.line {
+	border-bottom: 1px solid green;
+}
+*/
+/*.answer {
+	color: green;
+	font-weight: bolder;
+}
+
+.boxed {
+	border: 1px solid green;
+	padding: 5px;
+}
+
+.circle {
+	border: 1px solid green;
+	padding: 2px;
+	border-radius: 10px;
+}*/
+
+/*li * {page-break-after: avoid;}
+#response {page-break-before: avoid; p}*/
+li {
+	page-break-inside: avoid;
+}
+
+h3 {
+	font-size: 18pt;
+}
+body {
+	font-size: 12pt;
+}
+
+ol {
+	padding-left: 1.5em;
+}
+li {
+	padding-left: 1em;
+}
+
+#choice > li {
+	margin-bottom: 1.5em;
+}
+
+ol > li > ol > li {
+	list-style-type: lower-alpha;
+	line-height: 1.5em;
+	border-bottom: 1px solid rgb(220, 220, 220);
+	width: 95%;
+}
+
+/*#choice > li > ol > li:nth-child(even) {
+	background-color: rgb(220, 220, 220);
+}*/
+#anchor > li{
+	padding-bottom: 3em;
+}
+figure {
+	margin: 0;
+}
+.indent {
+	width: 20px;
+	display: inline-block;
+}
+.snippet {
+	font-size: 12pt;
+	line-height: 1.75em;
+	border: 1px dotted gray;
+	display: block;
+	width: 95%;
+	padding-left: 2em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+.jax {
+	font-size: 12pt;
+	border: 1px dotted gray;
+	width: 95%;
+	padding-bottom: 1em;
+	padding-left: 1em;
+}
+.code {
+	border: 1px dotted gray;
+	width: 95%;
+	padding-left: 2em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	font-family: monospace;
+}
+/*#lotr > div {
+	border: 1px dotted gray;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	margin-left: 1em;
+	position: relative;
+	left: -50px;
+}*/
+#lotrcode {
+	border: 1px dotted gray;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	font-family: monospace;
+	margin-top: 1em;
+	clear: both;
+	width: 95%;
+}
+#lotrq > p {
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+	margin-left: 0;
+	float: left;
+	width: 20%;
+	padding-bottom: 3em;
+	padding-left: 1em;
+	margin-bottom: 1em;
+	margin-right: 1em;
+	border: 1px solid gray;
+}
+.response {
+	height: 100px;
+}
+#boxmodel td {
+	width: 95%;
+	height: 5em;
+	border: 1px solid gray;
+}
+#boxmodel th {
+	font-weight: normal;
+}
+
+#blockinline table {
+	width: 95%
+}
+#blockinline th {
+	text-align: center;
+	width: 50%;
+}
+#blockinline td {
+	height: 5em;
+	border: 1px solid gray;
+}
+#selectors th, td {
+	border: 1px solid black;
+}
+#selectors th {
+	padding-left: 1em;
+}
+#selectors td {
+	height: 4em;
+	width: 85%;
+}
+#selectors {
+	width: 90%;
+}

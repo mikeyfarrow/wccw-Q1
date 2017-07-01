@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Ducket Packet</title>
+   <link rel="stylesheet" type="text/css" href="packet.css">
+</head>
+
+<body>
+   <div id="questions">
+      <div id="mult-choice">
+         <h2>Multiple Choice</h2>
+         <ol id="choice">
+            <li> What does CSS stand for?
+               <ol>
+                  <li>Creative Style Sheets</li>
+                  <li>Colorful Style Sheets</li>
+                  <li class="answer">Cascading Style Sheets</li>
+               </ol>
+            </li>
+            <li>
+               Which of the following is the correct syntax for a comment in a
+               <strong>CSS</strong> file?
+               <ol>
+                  <li><code>this is a comment</code></li>
+                  <li class="answer"><code>/* this is a comment */</code></li>
+                  <li><code>// this is a comment</code></li>
+                  <li><code>&lt;!-- this is a comment --&gt;</code></li>
+               </ol>
+            </li>
+            <li> Where in an HTML document is the correct place to refer to an external
+               style sheet?
+               <ol>
+                  <li>In the <code>body</code> element</li>
+                  <li>At the end of the document</li>
+                  <li class="answer">In the <code>head</code> element</li>
+                  <li>At the top of the document</li>
+               </ol>
+            </li>
+            <li> Which CSS property is used to change the background color?
+               <ol>
+                  <li class="answer"><code>background-color</code></li>
+                  <li><code>color</code></li>
+                  <li><code>bgcolor</code></li>
+               </ol>
+            </li>
+            <li> What does HTML stand for?
+               <ol>
+                  <li class="answer">HyperText Markup Language</li>
+                  <li>Home Tool Markup Language</li>
+                  <li>Hyperlinks and Text Markup Language</li>
+               </ol>
+            </li>
+            <li> Which of the following CSS rules changes the color of all of the text
+               inside the <code>&lt;body&gt;</code> element
+               <ol>
+                  <li>
+                     <code>
+						body {<br />
+						<span class="indent"></span>color=black;<br />
+						}
+					</code>
+                  </li>
+                  <li>
+                     <code>
+						body: <br />
+						<span class="indent"></span>color { black }
+					</code>
+                  </li>
+                  <li class="answer">
+                     <code>
+						body {<br />
+						<span class="indent"></span>color: black;<br />
+						}
+					</code>
+                  </li>
+               </ol>
+            </li>
+            <li> Choose the correct HTML tag for the largest heading
+               <ol>
+                  <li><code>head</code></li>
+                  <li class="answer"><code>h1</code></li>
+                  <li><code>title</code></li>
+                  <li><code>h6</code></li>
+               </ol>
+            </li>
+            <li> How do you display hyperlinks without an underline?
+               <ol>
+                  <li class="answer">
+                     <code>
+						a {<br />
+						<span class="indent"></span>text-decoration: none;<br />
+						}
+					</code>
+                  </li>
+                  <li>
+                     <code>
+						a {<br />
+						<span class="indent"></span>text-decoration: no underline;<br />
+						}
+					</code>
+                  </li>
+                  <li>
+                     <code>
+						a {<br />
+						<span class="indent"></span>decoration: no underline;<br />
+						}
+					</code>
+                  </li>
+                  <li>
+                     <code>
+						a {<br />
+						<span class="indent"></span>underline: none;<br />
+						}
+					</code>
+                  </li>
+               </ol>
+            </li>
+            <li> In CSS,
+               <q><code>a:hover</code></q> and
+               <q><code>a:active</code></q> are both examples of what?
+               <ol>
+                  <li>Invalid CSS code</li>
+                  <li class="answer">Pseudo-classes</li>
+                  <li><code>id</code> selectors</li>
+               </ol>
+            </li>
+            <li>
+               <p>Which CSS rule is more general (matches potentially more elements
+                  on the page)?</p>
+               <ol>
+                  <li class="answer"><code>element1 element2</code></li>
+                  <li><code>element1 > element2</code></li>
+               </ol>
+            </li>
+         </ol>
+      </div>
+      <div id="short-answer">
+         <h2>Short Response</h2>
+         <ol id="free">
+            <li>
+               <p>
+                  The <code>link</code> element can be placed in the head of an HTML
+                  document to link an external CSS file. In the code snippet below,
+                  draw a box around each of the three <em>attributes</em>. Underline
+                  the <em>attribute names</em>
+               </p>
+               <p>
+                  <code class="snippet">&lt;link <span class="boxed"><span class="line">href</span>="style.css"</span> 
+				<span class="boxed"><span class="line">type</span>="text/css"</span> <span class="boxed"><span class="line">rel</span>="stylesheet"</span> /&gt;</code>
+               </p>
+            </li>
+            <li>
+               In general, the best way to include CSS rules in your page is to use an external
+               stylesheet. Explain in a couple sentences why external stylesheets
+               are better than using embedded CSS in your HTML?
+                  <ul class="answer">
+                     <li>The same stylesheet can be used by many HTML pages</li>
+                     <li>HTML describes the meaning of the content and should not include any styling</li>
+                  </ul>
+            </li>
+            <li>
+               <p>
+                  Read the snippet of CSS below and modify it as follows</p>
+               <ul>
+                  <li>Underline each <em>selector</em></li>
+                  <li>Draw a box around each <em>rule</em></li>
+                  <li>Draw a circle around each <em>property</em></li>
+               </ul>
+                  <code class="snippet">
+
+<pre><div class="boxed"><span class="line">body</span> {
+   <span class="circle">background-color</span>: blue;
+}</div>
+
+<div class="boxed"><span class="line">#about</span> {
+   <span class="circle">border</span>: 3px dotted #FFFFFF;
+   <span class="circle">background-color</span>: gray;
+}</div></pre>
+				
+				</code>
+            </li>
+            <li id="boxmodel"> CSS treats all HTML elements as boxes. Every element has three available
+               properties that can be adjusted to control the appearance and spacing
+               of the "box". In the space below, briefly describe each of the properties.
+               <table>
+                  <tr>
+                     <th><code>border</code></th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th><code>margin</code></th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th><code>padding</code></th>
+                     <td></td>
+                  </tr>
+               </table>
+            </li>
+            <li>
+               <p>
+                  What is the <code>id</code> attribute used for? What about the
+                  <code>class</code> attribute?
+               </p>
+               <div class="response"></div>
+            </li>
+            <li id="blockinline">
+               <p>For each of the tags in the list below, add it to the correct category
+                  in the table below.</p>
+               <p>
+                  <code id="snippet">p, em, strong, div, span, ul,
+				h2, img, a, blockquote, ol, </code></p>
+               <table>
+                  <tr>
+                     <th>Block level</th>
+                     <th>Inline</th>
+                  </tr>
+                  <tr>
+                     <td></td>
+                     <td></td>
+                  </tr>
+               </table>
+            </li>
+            <li>
+               <p>What is the difference between block elements and inline elements?
+                  How can you tell if an element is block or inline?
+               </p>
+               <div class="response"></div>
+            </li>
+            <li>
+               <p>Descendent selectors and child selectors can be used in CSS to target
+                  elements based on their position in the HTML document's hierarchy.
+                  For example
+                  <q><code>p &gt; em</code></q> means "target all <code>em</code> elements
+                  whose direct parent is a <code>p</code> element". For each of the
+                  CSS selectors below, describe in simple English which element(s)
+                  are targeted.
+               </p>
+               <table id="selectors">
+                  <tr>
+                     <th><code>body</code></th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th><code>#intro</code></th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th><code>#intro p</code></th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th><code>.special > li</code></th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th><code>h1, h2, h3</code></th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th><code>*</code></th>
+                     <td></td>
+                  </tr>
+               </table>
+            </li>
+            <li>
+               <p>Write the HTML code necessary to reproduce the output below. You only
+                  need to write the code that would go inside the <code>body</code>
+                  element (so you can exclude the doctype, head, title, etc.)</p>
+               <div class="jax">
+                  <h1>Jax's To-Do List</h1>
+                  <p>So much to do and so little time.</p>
+                  <ol>
+                     <li>Scratch at door until it opens</li>
+                     <li>Lay on the sunny patch of the carpet</li>
+                  </ol>
+               </div>
+               <div class="response"></div>
+               <div class="response"></div>
+            </li>
+            <li>
+               <p>Why is it important to choose meaningful HTML tags?</p>
+               <div class="response"></div>
+            </li>
+            <li>
+               <p>What is the difference between margin and padding?</p>
+               <div class="response"></div>
+            </li>
+            <li>
+               <p>In CSS, what is the difference between setting
+                  <code>display: none;</code> and <code>visibility:
+				hidden;</code> on an element? How can you tell them apart by looking at the page?
+               </p>
+               <div class="response"></div>
+            </li>
+            <li>
+               <p>
+                  The CSS code below contains various mistakes and errors. Indicate the problems by
+                  annotating the code. Also, add a short comment header to the CSS
+                  code and add a new CSS rule that makes all paragraphs use the "justified"
+                  text alignment.
+               </p>
+               <pre class="snippet">
+
+
+body {
+    background-color: white,
+    foreground-color: red;
+}
+
+h1 {
+    font-align: "centered";
+}
+
+h2 {
+    font-decoration; underlined;
+}
+
+li (
+    font-name: Times New Roman; serif;
+)
+</pre>
+            </li>
+            <li>
+               <p>Given the following HTML code below, write each of the CSS selectors
+                  described below.</p>
+               <div id="lotrq">
+                  <p>all <code>h2</code> elements</p>
+                  <p>element with ID <code>intro</code></p>
+                  <p><code>h2</code> elements inside <code>intro</code></p>
+                  <p><code>h2</code> elements, except those inside <code>intro</code></p>
+                  <p><code>p</code> elements inside <code>content</code></p>
+                  <p><code>p</code> elements directly inside <code>content</code></p>
+                  <p>elements with class <code>bordered</code></p>
+                  <p><code>h2</code> elements with class <code>bordered</code></p>
+               </div>
+               <div id="lotrcode">
+                  <div>&lt;h1&gt;Lord&nbsp;of&nbsp;the&nbsp;Rings&nbsp;Fan&nbsp;Page&lt;/h1&gt;</div>
+                  <div>&lt;div&nbsp;id="intro"&gt;</div>
+                  <div>&nbsp;&nbsp;&lt;h2&gt;Introduction&lt;/h2&gt;</div>
+                  <div>&nbsp;&nbsp;&lt;p&gt;LotR&nbsp;is&nbsp;the&nbsp;best&nbsp;movie&nbsp;ever!&lt;/p&gt;</div>
+                  <div>&lt;/div&gt;</div>
+                  <div>&lt;div&nbsp;id="content"&gt;</div>
+                  <div>&nbsp;&nbsp;&lt;div&nbsp;class="bordered"&gt;</div>
+                  <div>&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;There&nbsp;are&nbsp;three&nbsp;volumes:&nbsp;FotR,&nbsp;T2T,&nbsp;and&nbsp;RotK.&lt;/p&gt;</div>
+                  <div>&nbsp;&nbsp;&lt;/div&gt;</div>
+                  <div>&nbsp;&nbsp;&lt;h2&gt;Characters&lt;/h2&gt;</div>
+                  <div>&nbsp;&nbsp;&lt;ul&gt;</div>
+                  <div>&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Bilbo&lt;/li&gt;</div>
+                  <div>&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Frodo&lt;/li&gt;</div>
+                  <div>&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Gandalf&lt;/li&gt;</div>
+                  <div>&nbsp;&nbsp;&lt;/ul&gt;</div>
+                  <div>&nbsp;&nbsp;&lt;h2&gt;Plot&lt;/h2&gt;</div>
+                  <div>&nbsp;&nbsp;&lt;p&gt;It's&nbsp;too&nbsp;long&nbsp;to&nbsp;describe.&nbsp;Just&nbsp;read&nbsp;the&nbsp;books!&lt;/p&gt;</div>
+                  <div>&lt;/div&gt;</div>
+                  <div>&lt;div&nbsp;id="footer"&gt;</div>
+                  <div>&nbsp;&nbsp;&lt;h2&nbsp;class="bordered"&gt;Thank&nbsp;you!&lt;/h2&gt;</div>
+                  <div>&lt;/div&gt;</div>
+               </div>
+               <p>In the space below, draw a 'family tree' showing the hierarchy of
+                  HTML elements in the above code sample. You should include only
+                  the HTML elements in the family tree. You do not have to include
+                  the text. See the example below for how to draw a tree.</p>
+               <img src="images/layout_dom-tree.png" width="200">
+               <div class="response"></div>
+            </li>
+            <li>
+               <p>What is the difference between a <code>div</code> and a <code>span</code>?
+                  Which is more appropriate for each of the following cases?</p>
+               <ol>
+                  <li>A few words at the start of each line represent the title of a
+                     movie. We want to color those and make them appear in a different
+                     font.
+                  </li>
+                  <li>Every three paragraphs of the page constitute a section about a
+                     particular author. </li>
+                  <li>Certain words in our news flashes are very important. We want to
+                     emphasize them with a bold style and red color. </li>
+               </ol>
+            </li>
+            <li>
+               <p></p>
+               <figure>
+                  <figcaption>Refer to the image below to answer the following questions about
+                     hyperlinks and paths.</figcaption>
+                  <img src="images/folders.gif" />
+               </figure>
+               <ol id="anchor">
+                  <li>What HTML tag is used to create hyperlinks?</li>
+                  <li>What attribute(s) need to be included for a hyperlink?</li>
+                  <li>Write the HTML code you would add to <code>page1.html</code> to
+                     create a hyperlink to <code>page2.html</code></li>
+                  <li>Write the HTML code you would add to <code>page2.html</code> to
+                     create a hyperlink to <code>page1.html</code></li>
+                  <li>Write the HTML code you would add to <code>page3.html</code> to
+                     create a hyperlink to <code>page4.html</code></li>
+               </ol>
+            </li>
+            <li>
+               <p>In CSS, colors can be specified multiple ways. For example, each of
+                  the following CSS declarations will set the color of text to black:
+                  <br>
+                  <code>color: black;</code>
+                  <br>
+                  <code>color: rgb(0, 0, 0);</code>
+                  <br>
+                  <code>color: #000000;</code>
+               </p>
+               <p>Consider the color <code>rgb(128, 255, 100)</code>. What do each of
+                  the numbers represent?
+               </p>
+               <p><code>128</code>:</p>
+               <p><code>255</code>:</p>
+               <p><code>100</code>:</p>
+            </li>
+            <li>
+               <p>When specifying a color using the <code>rgb</code> notation, what
+                  is the minimum value possible? What is the maximum?</p>
+               <br>
+               <br>
+               <br>
+            </li>
+            <li>
+               <p>Describe how to use the <code>font-family</code> property in CSS.
+                  Why is it important to list multiple possible fonts as in the example
+                  below?
+               </p>
+               <code class="snippet">font-family: Arial, Verdana, sans-serif;</code>
+               <div class="response"></div>
+            </li>
+         </ol>
+      </div>
+   </div>
+</body>
+
+</html>
